@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@include xyz-all;
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #00030e; */
+  color: #F2F2F2;
+  background: linear-gradient(135deg, #00030e 45%, #00031b 10%, #00030e 45%);
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+        display: none;
+    }
+
+.hero-text-animation{
+  animation: 1.25s herotextanimate .25s;
+}
+.hero-animation {
+    animation: 2s heroAnimate;
+    bottom: 0;
+    top: 0
+}
+@keyframes herotextanimate {
+  0% {
+    letter-spacing: 0.05em;
+  }
+  50%{
+    letter-spacing: 20px;
+  }
+  100%{
+    letter-spacing: 0.05em;
+  }
+}
+@keyframes heroAnimate {
+    0% {
+        bottom: 0;
+        top: 100%
+    }
+
+    50% {
+        bottom: -100%;
+        top: 0%
+    }
+
+    to {
+        bottom: 0;
+        top: 0
+    }
+}
+div a:hover{
+  color: #c9c0c0;
+}
+
+@keyframes smoothBounceBack {
+  0% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.010);
+  }
+  75% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(0.990);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+  }
+}
+
+.bounce-back {
+  animation: smoothBounceBack 0.4s linear forwards;
+}
+
+.trackingActive{
+  letter-spacing: 20px;
+  margin-top: 10px;
+}
+
+.section{
+  margin-top: 120px;
+  margin-bottom: 160px;
+}
+
+.techColor{
+  background-color: #030013;
+   /* background-color: #111827; */
+   /* background-color: #a5dd44; */
+}
+
+.testingColor{
+  background-color: rgb(107, 216, 120);
+}
