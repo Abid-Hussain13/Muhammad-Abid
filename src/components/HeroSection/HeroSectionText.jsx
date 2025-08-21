@@ -10,7 +10,7 @@ function HeroSectionText({children, trackingEnabled, position}) {
             trackingEnabled ? "trackingActive" : ""
           }`}
         >
-          <span className="hero-text-animation">{children}</span>
+          <span className="hero-text-animation cursor-pointer">{children}</span>
           {children == "Muhammad Abid" && 
             <span className="text-[12px] font-normal text-center hero-text-animation">
               Full Stack Developer

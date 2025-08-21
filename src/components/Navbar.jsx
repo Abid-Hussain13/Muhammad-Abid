@@ -6,15 +6,15 @@ import Siteicon4 from '/img/icon4.png'
 function Navbar() {
   return (
     <header className="w-11/12 ms-auto me-auto">
-      <nav className="flex justify-between items-center mt-3 py-3 border-b-1 border-blue-900">
+      <nav className="flex justify-between items-center mt-3 py-3 ">
         <div>
             <img className="w-12" src={Siteicon} alt="Site Icon" />
         </div>
-        <div className="space-x-5 ">
-            <a href='#about'>About</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
-            <a href="https://drive.google.com/file/d/148BLG8D_Zd6EFlYN5BlyJ92PE7MQCaez/view?usp=drive_link" target='_blank' rel="noopener noreferrer">Resume</a>
+        <div className='text-sm space-x-1'>
+            <a className='px-2 py-1 rounded hover:bg-blue-950' href='#about'>About</a>
+            <a className='px-2 py-1 rounded hover:bg-blue-950' href="#projects">Projects</a>
+            <a className='px-2 py-1 rounded hover:bg-blue-950' href="">Contact</a>
+            <a className='px-2 py-1 rounded bg-blue-950' href="https://drive.google.com/file/d/148BLG8D_Zd6EFlYN5BlyJ92PE7MQCaez/view?usp=drive_link" target='_blank' rel="noopener noreferrer">Resume</a>
         </div>
     </nav>
     </header>

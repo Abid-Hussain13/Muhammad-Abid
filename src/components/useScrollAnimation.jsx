@@ -1,28 +1,30 @@
 import { useState, useEffect, useRef } from 'react'
 
-function useScrollAnimation(threshold = 0.2, delayTime = 0 ) {
-      const [delayPassed, setDelayPassed] = useState(false);
+function useScrollAnimation(threshold = 0.2, delayTime = 0) {
+  const [delayPassed, setDelayPassed] = useState(false);
   const [inView, setInView] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false); // ✅ new lock
   const elementRef = useRef(null);
 
   // Delay timer
   useEffect(() => {
     const timer = setTimeout(() => {
       setDelayPassed(true);
-    }, delayTime ); // wait 2 seconds
+    }, delayTime);
     return () => clearTimeout(timer);
-  }, []);
+  }, [delayTime]);
 
   // Scroll observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !hasAnimated) {
           setInView(true);
-          observer.disconnect();
+          setHasAnimated(true);   // ✅ mark animation as done
+          observer.disconnect();  // stop observing
         }
       },
-      {threshold}
+      { threshold }
     );
 
     if (elementRef.current) {
@@ -30,9 +32,9 @@ function useScrollAnimation(threshold = 0.2, delayTime = 0 ) {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [threshold, hasAnimated]);
 
-  return {ref : elementRef, inView, delayPassed}
+  return { ref: elementRef, inView, delayPassed, hasAnimated };
 }
 
-export default useScrollAnimation
+export default useScrollAnimation;

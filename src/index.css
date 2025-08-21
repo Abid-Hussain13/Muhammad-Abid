@@ -82,15 +82,16 @@ div a:hover{
 
 .section{
   margin-top: 120px;
-  margin-bottom: 160px;
 }
 
 .techColor{
-  background-color: #030013;
+  background-color: #030012;
    /* background-color: #111827; */
    /* background-color: #a5dd44; */
 }
 
-.testingColor{
-  background-color: rgb(107, 216, 120);
+.projectbtns{
+  background: linear-gradient(135deg, #010b2e 45%, #000630 10%, #010b30 45%);
 }
+
+

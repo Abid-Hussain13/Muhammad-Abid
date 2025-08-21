@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection/HeroSection'
 import About from './components/About/About'
-import ProjectList from './components/Projects/ProjectList'
+import ProjectList from './components/Projects/megaProjects/ProjectList'
 
 function App() {
 
