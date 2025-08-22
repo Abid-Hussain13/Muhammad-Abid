@@ -9,7 +9,7 @@ import Backgroundimg6 from "/img/background6.jpg";
 export default function HeroSectionImage({transformStyle, isBouncing}) {
   return (
     <div
-          className={`h-40 md:h-60 w-3/4 mx-auto relative ${
+          className={`h-40 md:h-60 w-11/12 mx-auto relative ${
             isBouncing ? "bounce-back" : ""
           }`}
           style={{

@@ -38,7 +38,7 @@ function HeroSection() {
   return (
     <div className="w-11/12 mx-auto max-w-7xl my-5 select-none xyz">
       <div
-        className="h-45 md:h-60"
+        className="h-45 md:h-60 w-11/12 mx-auto"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >

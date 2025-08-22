@@ -5,7 +5,15 @@ import useScrollAnimation from "../useScrollAnimation";
 function AboutMe() {
     const { ref, inView, delayPassed } = useScrollAnimation(0.2, 2000);
   return (
-    <div className="text-center">
+    <div className="text-center group">
+      <div className='absolute top-108 left-35'>
+        <img 
+          className='w-14 h-auto rotate-12 group-hover:rotate-45 transition-all duration-500 ease-out'
+          src="img/brain-in-space.png" 
+          alt="brain in space image" 
+        />
+      </div>
+      
         <p
           ref={ref}
           className={`transition-all duration-1000 ease-out transform ps-5 ${
