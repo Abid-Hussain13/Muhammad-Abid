@@ -1,8 +1,45 @@
-import React from "react";
+import { useState } from "react";
 
-function contactForm() {
+function ContactForm() {
+  const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [validation, setValidation] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const email = formData.get("email");
+    if (!email || !email.includes("@")) {
+      setValidation(true);
+      return;
+    } else {
+      setValidation(false);
+      setLoading(true);
+      setStatus("Sending...");
+      const response = await fetch("https://formspree.io/f/xkgzdznz", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+        e.target.reset();
+      } else {
+        setStatus("Oops! There was a problem sending your message.");
+      }
+      setTimeout(() => {
+        setStatus("");
+        setLoading(false);
+      }, 1500);
+    }
+  };
+
   return (
-    <form action="#" className="col-span-3 w-full space-y-6">
+    <form onSubmit={handleSubmit} className="col-span-3 w-full space-y-6">
       <div>
         <input
           className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -16,11 +53,16 @@ function contactForm() {
       <div>
         <input
           className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-          type="email"
+          type="text"
           name="email"
           id="email"
           placeholder="Your Email"
         />
+        {validation && (
+          <p className="mt-2 -mb-3 text-xs text-red-500">
+            Please enter a valid email address.
+          </p>
+        )}
       </div>
 
       <div>
@@ -33,12 +75,20 @@ function contactForm() {
       </div>
 
       <div>
-        <button className="w-full max-w-md rounded-lg bg-blue-900 px-4 py-2 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:bg-blue-700 hover:shadow-lg active:scale-95">
-          Send Message
+        <button
+          disabled={loading}
+          className={`w-full max-w-md rounded-lg px-4 py-2 text-sm font-semibold text-white shadow-md transition-all duration-200 active:scale-95 ${loading ? "cursor-not-allowed bg-gray-400" : "bg-blue-900 hover:bg-blue-700 hover:shadow-lg"} `}
+        >
+          {loading ? "Sending..." : "Send Message"}
         </button>
       </div>
+      {status && (
+        <div className="animate-fade fixed top-5 left-1/2 -translate-x-1/2 rounded-lg px-4 py-2 text-white shadow-md outline-2 outline-blue-950">
+          {status}
+        </div>
+      )}
     </form>
   );
 }
 
-export default contactForm;
+export default ContactForm;

@@ -1,58 +1,63 @@
 @import "tailwindcss";
 @include xyz-all;
-html{
+html,
+body,
+#root {
+  height: 100%;
+}
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* background-color: #00030e; */
-  color: #F2F2F2;
+  color: #f2f2f2;
   background: linear-gradient(135deg, #00030e 45%, #00031b 10%, #00030e 45%);
   font-family: "Poppins", sans-serif;
 }
 
 body::-webkit-scrollbar {
-        display: none;
-    }
+  display: none;
+}
 
-.hero-text-animation{
-  animation: 1.25s herotextanimate .25s;
+.hero-text-animation {
+  animation: 1.25s herotextanimate 0.25s;
 }
 .hero-animation {
-    animation: 2s heroAnimate;
-    bottom: 0;
-    top: 0
+  animation: 2s heroAnimate;
+  bottom: 0;
+  top: 0;
 }
 @keyframes herotextanimate {
   0% {
     letter-spacing: 0.05em;
   }
-  50%{
+  50% {
     letter-spacing: 20px;
   }
-  100%{
+  100% {
     letter-spacing: 0.05em;
   }
 }
 @keyframes heroAnimate {
-    0% {
-        bottom: 0;
-        top: 100%
-    }
+  0% {
+    bottom: 0;
+    top: 100%;
+  }
 
-    50% {
-        bottom: -100%;
-        top: 0%
-    }
+  50% {
+    bottom: -100%;
+    top: 0%;
+  }
 
-    to {
-        bottom: 0;
-        top: 0
-    }
+  to {
+    bottom: 0;
+    top: 0;
+  }
 }
-div a:hover{
+div a:hover {
   color: #c9c0c0;
 }
 
@@ -61,10 +66,10 @@ div a:hover{
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
   }
   50% {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.010);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.01);
   }
   75% {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(0.990);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(0.99);
   }
   100% {
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
@@ -75,23 +80,21 @@ div a:hover{
   animation: smoothBounceBack 0.4s linear forwards;
 }
 
-.trackingActive{
+.trackingActive {
   letter-spacing: 20px;
   margin-top: 10px;
 }
 
-.section{
+.section {
   margin-top: 120px;
 }
 
-.techColor{
+.techColor {
   background-color: #030012;
-   /* background-color: #111827; */
-   /* background-color: #a5dd44; */
+  /* background-color: #111827; */
+  /* background-color: #a5dd44; */
 }
 
-.projectbtns{
+.projectbtns {
   background: linear-gradient(135deg, #010b2e 45%, #000630 10%, #010b30 45%);
 }
-
-

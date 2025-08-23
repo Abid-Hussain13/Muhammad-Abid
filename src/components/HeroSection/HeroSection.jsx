@@ -20,13 +20,13 @@ function HeroSection() {
     const rotateY = ((centerX - x) / centerX) * 10;
 
     setTransformStyle(
-      `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.08)`
+      `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.08)`,
     );
   };
 
   const handleMouseLeave = () => {
     setTransformStyle(
-      "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)"
+      "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)",
     );
     setTrackingEnabled(false);
     setTimeout(() => {
@@ -36,14 +36,22 @@ function HeroSection() {
   };
 
   return (
-    <div className="w-11/12 mx-auto max-w-7xl my-5 select-none xyz">
+    <div className="xyz relative mx-auto my-5 w-11/12 max-w-7xl select-none">
       <div
-        className="h-45 md:h-60 w-11/12 mx-auto"
+        className="mx-auto h-45 w-11/12 md:h-60"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        <HeroSectionImage transformStyle={transformStyle} isBouncing={isBouncing} />
-        <HeroSectionText trackingEnabled={trackingEnabled} position={"absolute"} >Muhammad Abid</HeroSectionText>
+        <HeroSectionImage
+          transformStyle={transformStyle}
+          isBouncing={isBouncing}
+        />
+        <HeroSectionText
+          trackingEnabled={trackingEnabled}
+          position={"absolute"}
+        >
+          Muhammad Abid
+        </HeroSectionText>
       </div>
     </div>
   );

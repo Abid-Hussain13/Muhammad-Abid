@@ -4,8 +4,8 @@ import socialLinks from "../../data/socialLinks";
 function contactLinks() {
   return (
     <div className="col-span-2 text-center">
-      <h1 className="text-2xl font-semibold text-gray-800">Get in Touch</h1>
-      <h1 className="text-md flex justify-center gap-3 font-normal text-gray-800">
+      <h1 className="text-2xl font-semibold text-gray-500">Get in Touch</h1>
+      <h1 className="text-md flex justify-center gap-3 font-normal text-gray-500">
         <span>
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=abidhussainme1@gmail.com"
@@ -23,6 +23,7 @@ function contactLinks() {
       <div className="mt-1 flex justify-center">
         {socialLinks.map((item) => (
           <a
+            key={item.id}
             className="h-8 w-8 p-1.5 hover:size-9"
             target="_blank"
             href={item.link}

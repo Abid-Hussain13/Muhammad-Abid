@@ -1,23 +1,21 @@
-import React from 'react'
+import React from "react";
 
-function HeroSectionText({children, trackingEnabled, position}) {
+function HeroSectionText({ children, trackingEnabled, position }) {
   return (
-        <h1
-          id='about'
-          className={`flex flex-col whitespace-nowrap hover:tracking-[20px] text-7xl font-medium left-1/2 -translate-x-1/2  dark:text-light-300 transition-all duration-700 tracking-wider
-            ${position == "absolute" ? "absolute top-[50%]" : "relative text-center"}
-            ${
-            trackingEnabled ? "trackingActive" : ""
-          }`}
-        >
-          <span className="hero-text-animation cursor-pointer">{children}</span>
-          {children == "Muhammad Abid" && 
-            <span className="text-[12px] font-normal text-center hero-text-animation">
-              Full Stack Developer
-            </span>
-}
-        </h1>
-  )
+    <h1
+      id="about"
+      className={`dark:text-light-300 left-1/2 flex -translate-x-1/2 flex-col bg-fixed text-7xl font-medium tracking-wider whitespace-nowrap transition-all duration-700 hover:tracking-[20px] ${position == "absolute" ? "absolute top-[84%]" : "relative text-center"} ${
+        trackingEnabled ? "trackingActive" : ""
+      }`}
+    >
+      <span className="hero-text-animation cursor-pointer">{children}</span>
+      {children == "Muhammad Abid" && (
+        <span className="hero-text-animation text-center text-[12px] font-normal">
+          Full Stack Developer
+        </span>
+      )}
+    </h1>
+  );
 }
 
-export default HeroSectionText
+export default HeroSectionText;
