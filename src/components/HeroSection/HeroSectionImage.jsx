@@ -26,7 +26,7 @@ export default function HeroSectionImage({ transformStyle, isBouncing }) {
         transition: "transform 0.40s ease-out",
       }}
     >
-      <div className="hero-animation absolute left-1/2 mx-auto w-full max-w-4xl -translate-x-1/2 overflow-hidden rounded-md bg-[#d1037a] transition-all">
+      <div className="hero-animation absolute left-1/2 mx-auto w-full max-w-4xl -translate-x-1/2 overflow-hidden rounded-md bg-[#005688] transition-all">
         <img
           className="h-full w-full object-cover"
           src={Backgroundimg}
