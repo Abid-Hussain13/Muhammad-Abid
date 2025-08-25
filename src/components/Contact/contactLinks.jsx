@@ -15,7 +15,7 @@ function contactLinks() {
           >
             <img
               className="h-4 w-4 brightness-0 hover:size-7 sm:h-5 sm:w-5 dark:invert"
-              src="public/icons/message.png"
+              src="/icons/message.png"
               alt="email icon"
             />
           </a>

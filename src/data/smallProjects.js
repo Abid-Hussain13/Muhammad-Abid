@@ -9,7 +9,7 @@ const smallProjects = [
               Spotify website. We use Next.js, TypeScript and Tailwind as our
               main technologies. Here is a link to an in-development preview of
               the app (~10% finished): coda-orpin`,
-        imageUrl: "public/projects/Event-Registration.png",
+        imageUrl: "/Projects/Event-Registration.png",
         color: 'linear-gradient(to right, #0D6EFD, #BA8205)',
         link: "https://event-registration-alpha-nine.vercel.app/"
     },
@@ -23,7 +23,7 @@ const smallProjects = [
               Spotify website. We use Next.js, TypeScript and Tailwind as our
               main technologies. Here is a link to an in-development preview of
               the app (~10% finished): coda-orpin`,
-        imageUrl: "public/projects/project2.png",
+        imageUrl: "/Projects/project2.png",
         color: '#0DCAF0',
         link: "https://inkspire-bay.vercel.app/"
     },
@@ -37,7 +37,7 @@ const smallProjects = [
               Spotify website. We use Next.js, TypeScript and Tailwind as our
               main technologies. Here is a link to an in-development preview of
               the app (~10% finished): coda-orpin`,
-        imageUrl: "public/projects/project4.png",
+        imageUrl: "/Projects/project4.png",
         color: '#A683E3',
         link: "https://permalist-two.vercel.app/"
     },
@@ -51,7 +51,7 @@ const smallProjects = [
               Spotify website. We use Next.js, TypeScript and Tailwind as our
               main technologies. Here is a link to an in-development preview of
               the app (~10% finished): coda-orpin`,
-        imageUrl: "public/projects/project5.png",
+        imageUrl: "/Projects/project5.png",
         color: '#485D73',
         link: "https://abid-hussain13.github.io/Scary-Catch/"
     }

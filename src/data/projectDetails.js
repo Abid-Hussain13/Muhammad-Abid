@@ -9,7 +9,7 @@ const projectsItem = [
               Spotify website. We use Next.js, TypeScript and Tailwind as our
               main technologies. Here is a link to an in-development preview of
               the app (~10% finished): coda-orpin`,
-        imageUrl: "public/projects/project3.png",
+        imageUrl: "/Projects/project3.png",
         color: 'rgb(107, 216, 120)',
         link: "https://squeezebook.vercel.app/"
     }
