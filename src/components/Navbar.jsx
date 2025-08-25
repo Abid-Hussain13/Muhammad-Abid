@@ -29,7 +29,7 @@ function Navbar() {
     { label: "Contact", href: "#contact" },
     {
       label: "Resume",
-      href: "https://drive.google.com/file/d/148BLG8D_Zd6EFlYN5BlyJ92PE7MQCaez/view?usp=drive_link",
+      href: "https://docs.google.com/viewer?url=http://localhost:5173/Resume.pdf",
       external: true,
     },
   ];
@@ -48,8 +48,14 @@ function Navbar() {
               key={i}
               className="rounded px-2 py-1 text-black hover:bg-gray-400 dark:text-[#c9c0c0] dark:hover:bg-blue-950 dark:hover:text-zinc-50"
               href={link.href}
-              target={link.external ? "_blank" : "_self"}
-              rel={link.external ? "noopener noreferrer" : ""}
+              target={
+                link.label === "Resume"
+                  ? "_blank"
+                  : link.external
+                    ? "_blank"
+                    : "_self"
+              }
+              rel="noopener noreferrer"
             >
               {link.label}
             </a>
