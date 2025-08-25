@@ -23,12 +23,13 @@ function AboutMe() {
         </div>
 
         <p className="pt-5 text-center text-[12px] sm:text-[14px] lg:text-[15px] xl:text-[16px]">
-          Hey, I'm Muhammad Abid, a curious Full Stack Developer with over 3
-          years of experience based in Dunyapur, Pakistan. I'm always striving
-          to grow and learn something new to build better stuff for better
-          results. I specialize in Frontend Development with a focus on modern
-          user interface and performance. I describe myself as a passionate
-          developer who loves coding, learning, growing.
+          Hi, I'm Muhammad Abid — a curious Full Stack Web Developer from
+          Dunyapur, Pakistan. I have hands-on experience building real-world
+          projects and I'm always striving to learn, grow, and create better
+          solutions for impactful results. I specialize in Frontend and Backend
+          Development, with a strong focus on modern user interfaces, code
+          integrity, and performance. I'd describe myself as a passionate
+          developer who loves coding, continuous learning, and personal growth.
         </p>
       </div>
     </div>

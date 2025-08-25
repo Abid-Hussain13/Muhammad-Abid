@@ -2,13 +2,11 @@ const smallProjects = [
     {
         id: 2,
         name: "Event Registration",
-        description: `Register your event easily Now!! open source project that is currently in
-                        development. The app will be a Spotify clone but with extra
-              features and a modern user interface. The UI was designed by me
-              using Figma, and I tried to make it superior to the official
-              Spotify website. We use Next.js, TypeScript and Tailwind as our
-              main technologies. Here is a link to an in-development preview of
-              the app (~10% finished): coda-orpin`,
+        description: `A full-stack web app for managing event bookings with authentication and admin controls.
+                       Built with Node.js, Express, EJS, and PostgreSQL, it lets users sign up, log in, 
+                       and book events while preventing double-bookings. Admins can view and manage all 
+                       bookings, while users see their own. Features include secure authentication, 
+                       session handling, and real-time flash messages for feedback.`,
         imageUrl: "/Projects/Event-Registration.png",
         color: 'linear-gradient(to right, #0D6EFD, #BA8205)',
         link: "https://event-registration-alpha-nine.vercel.app/"
@@ -16,13 +14,12 @@ const smallProjects = [
     {
         id: 3,
         name: "Inkspire",
-        description: `Inkspire your event easily Now!! open source project that is currently in
-                        development. The app will be a Spotify clone but with extra
-              features and a modern user interface. The UI was designed by me
-              using Figma, and I tried to make it superior to the official
-              Spotify website. We use Next.js, TypeScript and Tailwind as our
-              main technologies. Here is a link to an in-development preview of
-              the app (~10% finished): coda-orpin`,
+        description: `A simple blogging platform to write, edit, and share posts.
+                        I built Inkspire using Node.js, Express, EJS, and MongoDB. 
+                        Users can create, edit, delete, and view blog posts with a clean,
+                         dynamic interface powered by EJS templates. Posts are stored in MongoDB,
+                          ensuring persistence and easy retrieval. This project highlights my ability
+                           to build CRUD-based full-stack applications with database integration and a focus on user-friendly design.`,
         imageUrl: "/Projects/project2.png",
         color: '#0DCAF0',
         link: "https://inkspire-bay.vercel.app/"
@@ -30,13 +27,11 @@ const smallProjects = [
     {
         id: 4,
         name: "Permalist",
-        description: `Permalist your event easily Now!! open source project that is currently in
-                        development. The app will be a Spotify clone but with extra
-              features and a modern user interface. The UI was designed by me
-              using Figma, and I tried to make it superior to the official
-              Spotify website. We use Next.js, TypeScript and Tailwind as our
-              main technologies. Here is a link to an in-development preview of
-              the app (~10% finished): coda-orpin`,
+        description: `A persistent to-do list application with full CRUD functionality.
+        I built Permalist using Node.js, Express, EJS, and PostgreSQL. Users can add, edit, 
+        and delete tasks, with all items stored in a PostgreSQL database for persistence. 
+        The app renders a clean, dynamic UI using EJS templates, ensuring tasks remain available 
+        across sessions. This project demonstrates my skills in building database-driven applications with structured CRUD operations.`,
         imageUrl: "/Projects/project4.png",
         color: '#A683E3',
         link: "https://permalist-two.vercel.app/"
@@ -44,13 +39,13 @@ const smallProjects = [
     {
         id: 5,
         name: "Scary Catch",
-        description: `Scary Catch your event easily Now!! open source project that is currently in
-                        development. The app will be a Spotify clone but with extra
-              features and a modern user interface. The UI was designed by me
-              using Figma, and I tried to make it superior to the official
-              Spotify website. We use Next.js, TypeScript and Tailwind as our
-              main technologies. Here is a link to an in-development preview of
-              the app (~10% finished): coda-orpin`,
+        description: `A fun and interactive browser game built with HTML, CSS, and JavaScript.
+                    In Scary Catch, scary plants fall from the top of the screen, and the player 
+                    must eliminate them before they reach the base line. The game features a freeze 
+                    crystal mechanic that temporarily pauses the screen, giving players extra time 
+                    to react. Each plant falls with a dynamic speed, adding challenge and competitiveness. 
+                    Players start with three lives, and every successful hit earns 10 points, making the 
+                    game both exciting and skill-driven.`,
         imageUrl: "/Projects/project5.png",
         color: '#485D73',
         link: "https://abid-hussain13.github.io/Scary-Catch/"
