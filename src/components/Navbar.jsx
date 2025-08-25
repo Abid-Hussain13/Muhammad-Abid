@@ -29,7 +29,7 @@ function Navbar() {
     { label: "Contact", href: "#contact" },
     {
       label: "Resume",
-      href: "https://docs.google.com/viewer?url=http://localhost:5173/Resume.pdf",
+      href: "https://docs.google.com/viewer?url=https://muhammad-abid-portfolio.netlify.app/Resume.pdf",
       external: true,
     },
   ];
