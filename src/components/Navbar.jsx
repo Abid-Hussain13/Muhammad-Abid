@@ -37,7 +37,6 @@ function Navbar() {
   return (
     <header className="ms-auto me-auto w-11/12">
       <nav className="flex items-center justify-between py-3">
-        {/* Logo */}
         <div>
           <img className="w-12" src={image} alt="Site Icon" />
         </div>
@@ -67,7 +66,7 @@ function Navbar() {
       </nav>
 
       {/* Mobile Drawer */}
-      <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
+      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
         <div className="flex h-full w-60 flex-col space-y-3 p-4 dark:bg-gray-900">
           <div className="mb-4 flex items-center justify-between">
             <img className="w-10" src={image} alt="Site Icon" />

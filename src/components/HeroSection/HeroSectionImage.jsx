@@ -14,7 +14,7 @@ export default function HeroSectionImage({ transformStyle, isBouncing }) {
 
   return (
     <div
-      className={`relative mx-auto h-32 w-11/12 sm:h-40 md:h-60 ${
+      className={`relative mx-auto h-32 w-full sm:h-40 sm:w-11/12 md:h-60 ${
         isBouncing ? "bounce-back" : ""
       }`}
       style={{
@@ -22,13 +22,6 @@ export default function HeroSectionImage({ transformStyle, isBouncing }) {
         transition: "transform 0.40s ease-out",
       }}
     >
-      <div className="hero-animation absolute left-1/2 mx-auto w-full max-w-4xl -translate-x-1/2 overflow-hidden rounded-md bg-[#D4D4D8] transition-all dark:bg-[#00030E]">
-        <img
-          className="h-full w-full object-cover"
-          src={Backgroundimg}
-          alt="abstract art background img"
-        />
-      </div>
       <div
         className={`hero-animation absolute left-1/2 mx-auto w-full max-w-4xl -translate-x-1/2 overflow-hidden rounded-md transition-all`}
         style={{

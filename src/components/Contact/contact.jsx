@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div
       ref={ref}
-      className={`mx-auto flex min-h-screen w-11/12 items-center justify-center transition-all duration-700 ease-out ${
+      className={`mx-auto flex w-11/12 items-center justify-center transition-all duration-700 ease-out sm:min-h-screen ${
         delayPassed && inView
           ? "translate-y-0 opacity-100"
           : "translate-y-10 opacity-0"

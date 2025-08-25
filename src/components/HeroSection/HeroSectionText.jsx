@@ -4,7 +4,7 @@ function HeroSectionText({ children, trackingEnabled, position }) {
   return (
     <h1
       id="about"
-      className={`heading dark:text-light-300 left-1/2 flex -translate-x-1/2 flex-col bg-fixed text-3xl font-medium tracking-wider whitespace-nowrap transition-all duration-700 md:text-7xl md:hover:tracking-[20px] ${position == "absolute" ? "absolute md:top-[84%]" : "relative text-center"} ${
+      className={`heading dark:text-light-300 left-1/2 flex -translate-x-1/2 flex-col bg-fixed text-3xl font-medium tracking-wider whitespace-nowrap transition-all duration-700 md:text-7xl md:hover:tracking-[20px] ${position == "absolute" ? "absolute top-[50%] sm:top-[70%] md:top-[84%]" : "relative text-center"} ${
         trackingEnabled ? "trackingActive" : ""
       }`}
     >
