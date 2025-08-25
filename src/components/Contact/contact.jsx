@@ -16,12 +16,12 @@ function Contact() {
           : "translate-y-10 opacity-0"
       }`}
     >
-      <div id="contact">
+      <div id="contact" className="w-11/12">
         <HeroSectionText trackingEnabled={false} position={"relative"}>
           Contact
         </HeroSectionText>
 
-        <div className="mx-auto mt-15 grid w-[800px] gap-20 md:grid-cols-5">
+        <div className="mx-auto mt-15 mb-10 grid max-w-[800px] gap-20 md:mb-0 md:grid-cols-5 md:gap-20">
           <ContactLinks />
           <ContactForm />
         </div>

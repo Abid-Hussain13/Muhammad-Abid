@@ -1,46 +1,46 @@
-import React, { useState } from 'react'
-import HeroSectionText from '../../HeroSection/HeroSectionText'
-import Projects from './Projects'
-import projectDetails from "../../../data/projectDetails"
-import smallProjects from '../../../data/smallProjects'
+import React, { useState } from "react";
+import HeroSectionText from "../../HeroSection/HeroSectionText";
+import Projects from "./Projects";
+import projectDetails from "../../../data/projectDetails";
+import smallProjects from "../../../data/smallProjects";
 
 function ProjectList() {
-  const [projectId , setProjectId] = useState(0);
+  const [projectId, setProjectId] = useState(0);
 
   function handleProjectId(id) {
     setProjectId(id);
   }
 
   return (
-    <section className="w-svw  overflow-hidden section" >
-      <div id="projects" className={`relative  w-11/12 mx-auto space-y-15`}>
-
-      
-        <HeroSectionText trackingEnabled={false} position={"relative"}>Projects</HeroSectionText>
-        {projectDetails.map(project => (
-          <Projects 
-            key={project.id} 
-            id={project.id} 
-            ProjectName={project.name} 
-            PorjectDescription={project.description} 
+    <section className="z-90 mt-[120px] overflow-hidden">
+      <div id="projects" className={`relative mx-auto w-11/12 space-y-15`}>
+        <HeroSectionText trackingEnabled={false} position={"relative"}>
+          Projects
+        </HeroSectionText>
+        {projectDetails.map((project) => (
+          <Projects
+            key={project.id}
+            id={project.id}
+            ProjectName={project.name}
+            PorjectDescription={project.description}
             blobColor={project.color}
-            ProjectUrl={project.link}  
+            ProjectUrl={project.link}
             img={project.imageUrl}
             source={"projectDetails"}
-            />
+          />
         ))}
 
-        <Projects 
-          id={smallProjects[projectId].id} 
-          PorjectDescription={smallProjects[projectId].description} 
-          img={smallProjects[projectId].imageUrl} 
-          blobColor={smallProjects[projectId].color} 
+        <Projects
+          id={smallProjects[projectId].id}
+          PorjectDescription={smallProjects[projectId].description}
+          img={smallProjects[projectId].imageUrl}
+          blobColor={smallProjects[projectId].color}
           source={"smallProjects"}
           handleProjectId={handleProjectId}
-          />
-        </div>
+        />
+      </div>
     </section>
-  )
+  );
 }
 
-export default ProjectList
+export default ProjectList;

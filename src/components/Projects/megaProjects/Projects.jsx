@@ -21,14 +21,14 @@ function Projects({
   return (
     <div
       ref={ref}
-      className={`techColor over relative mb-[250px] h-[440px] rounded px-15 py-10 shadow-lg shadow-blue-950 transition-all duration-700 ease-out select-auto ${
+      className={`md:techColor over relative ${source == "smallProjects" ? "min-h-[400px] sm:mb-0 sm:min-h-[320px] md:mb-[250px] md:min-h-[440px]" : "mb-[100px] min-h-[440px] sm:mb-[150px] md:mb-[200px] lg:mb-[250px]"} rounded px-4 pt-8 transition-all duration-700 ease-out select-auto sm:px-6 sm:py-10 md:px-10 md:shadow-lg md:shadow-blue-950 lg:px-15 ${
         delayPassed && inView
           ? "translate-y-0 opacity-100"
           : "translate-y-10 opacity-0"
       }`}
     >
       <div
-        className={`flex ${source == "projectDetails" ? "gap-30" : "gap-20"} `}
+        className={`sm:flex ${source == "projectDetails" ? "gap-8 sm:gap-12 md:gap-15 lg:gap-30" : "md:gap-10 lg:gap-20"} `}
       >
         {source == "projectDetails" ? (
           <ProjectNameUrl ProjectName={ProjectName} ProjectUrl={ProjectUrl} />
@@ -36,10 +36,13 @@ function Projects({
           <SmallProjectNameUrl handleProjectId={handleProjectId} />
         )}
 
-        <ProjectDescription ProjectDescription={PorjectDescription} />
+        <ProjectDescription
+          ProjectDescription={PorjectDescription}
+          source={source}
+        />
       </div>
-      <Blob id={id} blobColor={blobColor} />
-      <ProjectImg img={img} id={id} />
+      <Blob id={id} blobColor={blobColor} source={source} />
+      <ProjectImg img={img} id={id} source={source} />
     </div>
   );
 }

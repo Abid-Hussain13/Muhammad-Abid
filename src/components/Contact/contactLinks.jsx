@@ -3,16 +3,18 @@ import socialLinks from "../../data/socialLinks";
 
 function contactLinks() {
   return (
-    <div className="col-span-2 text-center">
-      <h1 className="text-2xl font-semibold text-gray-500">Get in Touch</h1>
-      <h1 className="text-md flex justify-center gap-3 font-normal text-gray-500">
-        <span>
+    <div className="text-center md:col-span-2">
+      <h1 className="text-base font-semibold text-gray-500 sm:text-2xl">
+        Get in Touch
+      </h1>
+      <h1 className="sm:text-md flex justify-center gap-1 text-sm font-normal text-gray-500">
+        <span className="mt-0.5 sm:mt-0">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=abidhussainme1@gmail.com"
             target="_blank"
           >
             <img
-              className="h-6 w-6 brightness-0 invert hover:size-7"
+              className="h-4 w-4 brightness-0 hover:size-7 sm:h-5 sm:w-5 dark:invert"
               src="public/icons/message.png"
               alt="email icon"
             />
@@ -29,7 +31,7 @@ function contactLinks() {
             href={item.link}
           >
             <img
-              className="brightness-0 invert"
+              className="brightness-0 dark:invert"
               src={item.icon}
               alt={item.icon}
             />

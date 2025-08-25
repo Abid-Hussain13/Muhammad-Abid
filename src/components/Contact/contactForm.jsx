@@ -39,8 +39,8 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="col-span-3 w-full space-y-6">
-      <div>
+    <form onSubmit={handleSubmit} className="w-full space-y-6 md:col-span-3">
+      <div className="text-center">
         <input
           className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           type="text"
@@ -50,7 +50,7 @@ function ContactForm() {
         />
       </div>
 
-      <div>
+      <div className="text-center">
         <input
           className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           type="text"
@@ -65,7 +65,7 @@ function ContactForm() {
         )}
       </div>
 
-      <div>
+      <div className="text-center">
         <textarea
           className="font-momo h-32 w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           name="message"
@@ -74,7 +74,7 @@ function ContactForm() {
         ></textarea>
       </div>
 
-      <div>
+      <div className="text-center">
         <button
           disabled={loading}
           className={`w-full max-w-md rounded-lg px-4 py-2 text-sm font-semibold text-white shadow-md transition-all duration-200 active:scale-95 ${loading ? "cursor-not-allowed bg-gray-400" : "bg-blue-900 hover:bg-blue-700 hover:shadow-lg"} `}
@@ -83,7 +83,7 @@ function ContactForm() {
         </button>
       </div>
       {status && (
-        <div className="animate-fade fixed top-5 left-1/2 -translate-x-1/2 rounded-lg px-4 py-2 text-white shadow-md outline-2 outline-blue-950">
+        <div className="animate-fade fixed top-8 left-1/2 mt-3 -translate-x-1/2 rounded-lg px-4 py-2 text-white shadow-md outline-2 outline-blue-950">
           {status}
         </div>
       )}
