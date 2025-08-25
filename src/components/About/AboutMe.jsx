@@ -13,9 +13,7 @@ function AboutMe() {
           : "translate-y-10 opacity-0"
       }`}
     >
-      {/* Flex wrapper so image + paragraph align together */}
       <div className="flex items-start">
-        {/* Image (sticks with paragraph) */}
         <div className="w-7 flex-shrink-0 md:w-9 lg:w-11">
           <img
             className="h-auto w-full rotate-12 transition-all duration-500 ease-out group-hover:rotate-45"
@@ -24,7 +22,6 @@ function AboutMe() {
           />
         </div>
 
-        {/* Paragraph */}
         <p className="pt-5 text-center text-[12px] sm:text-[14px] lg:text-[15px] xl:text-[16px]">
           Hey, I'm Muhammad Abid, a curious Full Stack Developer with over 3
           years of experience based in Dunyapur, Pakistan. I'm always striving

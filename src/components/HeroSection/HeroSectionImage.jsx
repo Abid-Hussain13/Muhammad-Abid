@@ -1,10 +1,6 @@
 import React from "react";
-import Backgroundimg1 from "/img/background1.jpg";
 import Backgroundimg2 from "/img/background2.jpg";
-import Backgroundimg3 from "/img/background3.jpg";
-import Backgroundimg4 from "/img/background4.jpg";
 import Backgroundimg5 from "/img/background5.jpg";
-import Backgroundimg6 from "/img/background6.jpg";
 import { useTheme } from "../context/ThemeContext";
 
 export default function HeroSectionImage({ transformStyle, isBouncing }) {
@@ -26,13 +22,23 @@ export default function HeroSectionImage({ transformStyle, isBouncing }) {
         transition: "transform 0.40s ease-out",
       }}
     >
-      <div className="hero-animation absolute left-1/2 mx-auto w-full max-w-4xl -translate-x-1/2 overflow-hidden rounded-md bg-[#005688] transition-all">
+      <div className="hero-animation absolute left-1/2 mx-auto w-full max-w-4xl -translate-x-1/2 overflow-hidden rounded-md bg-[#D4D4D8] transition-all dark:bg-[#00030E]">
         <img
           className="h-full w-full object-cover"
           src={Backgroundimg}
           alt="abstract art background img"
         />
       </div>
+      <div
+        className={`hero-animation absolute left-1/2 mx-auto w-full max-w-4xl -translate-x-1/2 overflow-hidden rounded-md transition-all`}
+        style={{
+          backgroundImage: `url(${Backgroundimg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transform: transformStyle,
+          transition: "transform 0.40s ease-out",
+        }}
+      ></div>
     </div>
   );
 }
