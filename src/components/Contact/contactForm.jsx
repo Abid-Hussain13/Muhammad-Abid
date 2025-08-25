@@ -39,7 +39,10 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full space-y-6 md:col-span-3">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full space-y-2 sm:space-y-6 md:col-span-3"
+    >
       <div className="text-center">
         <input
           className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"

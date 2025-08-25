@@ -21,7 +21,7 @@ function Contact() {
           Contact
         </HeroSectionText>
 
-        <div className="mx-auto mt-15 mb-10 grid max-w-[800px] gap-20 md:mb-0 md:grid-cols-5 md:gap-20">
+        <div className="mx-auto mt-15 mb-10 grid max-w-[800px] gap-8 md:mb-0 md:grid-cols-5 md:gap-20">
           <ContactLinks />
           <ContactForm />
         </div>
