@@ -4,4 +4,4 @@ A modern, responsive portfolio website to showcase my projects, skills, and expe
 Built with **React, Tailwind** 
 
 ## 🚀 Live Demo
-👉 [View My Portfolio]([https://your-portfolio-link.com](https://muhammad-abid-portfolio.netlify.app/))
+👉 [View My Portfolio](https://muhammad-abid-portfolio.netlify.app/)
