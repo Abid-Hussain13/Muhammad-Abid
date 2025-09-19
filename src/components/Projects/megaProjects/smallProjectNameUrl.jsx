@@ -9,7 +9,7 @@ function SmallProjectNameUrl({ handleProjectId }) {
         <div
           key={project.id}
           className="item my-2 flex w-full cursor-pointer flex-col rounded bg-[#D4D4D8] px-4 py-1 shadow-sm shadow-blue-950 hover:shadow-lg sm:w-70 md:w-50 dark:bg-[linear-gradient(135deg,#010b2e_45%,#000630_10%,#010b30_45%)]"
-          onMouseEnter={() => handleProjectId(index)} // 👈 moved here
+          onMouseEnter={() => handleProjectId(index)}
         >
           <span className="font-normal md:text-sm lg:text-base">
             {project.name}
@@ -19,7 +19,7 @@ function SmallProjectNameUrl({ handleProjectId }) {
             target="_blank"
             rel="noopener noreferrer"
             href={project.link}
-            onClick={(e) => e.stopPropagation()} // 👈 prevents parent click when link is clicked
+            onClick={(e) => e.stopPropagation()}
           >
             View here
             <RiExternalLinkLine />

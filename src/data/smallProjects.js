@@ -1,6 +1,18 @@
 const smallProjects = [
     {
-        id: 2,
+        id: 17,
+        name: "usePopcorn",
+        description: `A movie tracking web app to search, discover, and manage a personal watchlist. usePopcorn is built
+         with React, custom hooks, and local storage for persistent state. Users can search for movies via an external API,
+          view details, and add them to their watched list with personal ratings. The app also provides a summary of watched
+           movies, including total runtime and average ratings. With dynamic rendering, error handling, and a responsive 
+           interface, it offers a simple yet powerful way to organize and reflect on movies watched.`,
+        imageUrl: "/Projects/project17.png",
+        color: '#6741D9',
+        link: "https://usepopcorns1.netlify.app/"
+    },
+    {
+        id: 11,
         name: "Event Registration",
         description: `A full-stack web app for managing event bookings with authentication and admin controls.
                        Built with Node.js, Express, EJS, and PostgreSQL, it lets users sign up, log in, 
@@ -12,7 +24,7 @@ const smallProjects = [
         link: "https://event-registration-alpha-nine.vercel.app/"
     },
     {
-        id: 3,
+        id: 12,
         name: "Inkspire",
         description: `A simple blogging platform to write, edit, and share posts.
                         I built Inkspire using Node.js, Express, EJS, and MongoDB. 
@@ -25,7 +37,7 @@ const smallProjects = [
         link: "https://inkspire-bay.vercel.app/"
     },
     {
-        id: 4,
+        id: 13,
         name: "Permalist",
         description: `A persistent to-do list application with full CRUD functionality.
         I built Permalist using Node.js, Express, EJS, and PostgreSQL. Users can add, edit, 
@@ -37,7 +49,7 @@ const smallProjects = [
         link: "https://permalist-two.vercel.app/"
     },
     {
-        id: 5,
+        id: 14,
         name: "Scary Catch",
         description: `A fun and interactive browser game built with HTML, CSS, and JavaScript.
                     In Scary Catch, scary plants fall from the top of the screen, and the player 

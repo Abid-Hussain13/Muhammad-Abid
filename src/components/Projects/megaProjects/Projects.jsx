@@ -21,7 +21,7 @@ function Projects({
   return (
     <div
       ref={ref}
-      className={`md:techColor over relative ${source == "smallProjects" ? "min-h-[370px] sm:mb-0 sm:min-h-[320px] md:mb-[250px] md:min-h-[440px] md:shadow-blue-950" : "mb-[100px] min-h-[440px] shadow-md shadow-blue-950 sm:mb-[150px] md:mb-[200px] lg:mb-[250px]"} rounded px-4 pt-8 transition-all duration-700 ease-out select-auto sm:px-6 sm:py-10 md:px-10 md:shadow-lg lg:px-15 ${
+      className={`md:techColor over relative ${source == "smallProjects" ? "mt-[130px] min-h-[370px] sm:mb-0 sm:min-h-[320px] md:mt-0 md:mb-[250px] md:min-h-[440px] md:shadow-blue-950" : "mb-[100px] min-h-[440px] shadow-md shadow-blue-950 sm:mb-[150px] md:mb-[200px] lg:mb-[250px]"} rounded px-4 pt-8 transition-all duration-700 ease-out select-auto sm:px-6 sm:py-10 md:px-10 md:shadow-lg lg:px-15 ${
         delayPassed && inView
           ? "translate-y-0 opacity-100"
           : "translate-y-10 opacity-0"
