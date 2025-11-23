@@ -2,6 +2,16 @@ import React, { useEffect, useState } from "react";
 
 function ScrollProgress() {
   const [scroll, setScroll] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 450);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 450);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +31,9 @@ function ScrollProgress() {
         position: "fixed",
         top: 0,
         right: 0,
-        width: "4px", // thickness of bar
+        width: isMobile ? "2px" : "4px", // thinner bar on mobile
         height: "100vh",
-        background: "rgba(0,0,0,0.1)", // track background
+        background: "rgba(0,0,0,0.1)",
         zIndex: 9999,
       }}
     >
@@ -31,8 +41,10 @@ function ScrollProgress() {
         style={{
           width: "100%",
           height: `${scroll}%`,
-          background: "linear-gradient(to bottom, #00c6ff, #0072ff)", // gradient fill
-          boxShadow: "0 0 10px #00c6ff, 0 0 20px #0072ff", // glowing effect
+          background: "linear-gradient(to bottom, #00c6ff, #0072ff)",
+          boxShadow: isMobile
+            ? "0 0 5px #00c6ff" // lighter glow on mobile
+            : "0 0 10px #00c6ff, 0 0 20px #0072ff", // full glow on desktop
           transition: "height 0.2s ease-out",
         }}
       />
