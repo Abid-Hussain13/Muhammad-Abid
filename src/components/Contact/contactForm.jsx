@@ -45,7 +45,7 @@ function ContactForm() {
     >
       <div className="text-center">
         <input
-          className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-xs font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm"
           type="text"
           name="name"
           id="name"
@@ -55,7 +55,7 @@ function ContactForm() {
 
       <div className="text-center">
         <input
-          className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-xs font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm"
           type="text"
           name="email"
           id="email"
@@ -70,7 +70,7 @@ function ContactForm() {
 
       <div className="text-center">
         <textarea
-          className="font-momo h-32 w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          className="font-momo h-32 w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-xs font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm"
           name="message"
           id="message"
           placeholder="Your Message"
