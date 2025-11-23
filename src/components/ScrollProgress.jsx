@@ -31,7 +31,7 @@ function ScrollProgress() {
         position: "fixed",
         top: 0,
         right: 0,
-        width: isMobile ? "2px" : "4px", // thinner bar on mobile
+        width: isMobile ? "3px" : "4px", // thinner bar on mobile
         height: "100vh",
         background: "rgba(0,0,0,0.1)",
         zIndex: 9999,
@@ -43,7 +43,7 @@ function ScrollProgress() {
           height: `${scroll}%`,
           background: "linear-gradient(to bottom, #00c6ff, #0072ff)",
           boxShadow: isMobile
-            ? "0 0 5px #00c6ff" // lighter glow on mobile
+            ? "0 0 7px #00c6ff" // lighter glow on mobile
             : "0 0 10px #00c6ff, 0 0 20px #0072ff", // full glow on desktop
           transition: "height 0.2s ease-out",
         }}
