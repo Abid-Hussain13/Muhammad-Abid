@@ -1,6 +1,6 @@
 import React from "react";
-import Backgroundimg2 from "/img/background2.jpg";
 import Backgroundimg5 from "/img/background5.jpg";
+import Backgroundimg2 from "/img/background2.webp";
 import { useTheme } from "../context/ThemeContext";
 
 export default function HeroSectionImage({ transformStyle, isBouncing }) {
