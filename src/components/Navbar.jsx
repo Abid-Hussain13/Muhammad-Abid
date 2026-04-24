@@ -41,7 +41,7 @@ function Navbar() {
           <img className="w-12" src={image} alt="Site Icon" />
         </div>
 
-        {/* Desktop Menu */
+        {/* Desktop Menu */}
         <div className="hidden flex-row items-center space-x-1 text-sm md:flex">
           {navLinks.map((link, i) => (
             <a
