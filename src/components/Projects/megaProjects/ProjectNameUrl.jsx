@@ -8,7 +8,7 @@ function ProjectNameUrl({ ProjectName, ProjectUrl }) {
         {ProjectName}
       </span>
       <a
-        className="z-10 flex items-center gap-1 text-sm font-light text-blue-400 underline-offset-2 hover:underline"
+        className="z-10 flex items-center gap-1 text-sm font-light text-blue-600 underline-offset-2 hover:underline dark:text-blue-400"
         target="_blank"
         rel="noopener noreferrer"
         href={ProjectUrl}

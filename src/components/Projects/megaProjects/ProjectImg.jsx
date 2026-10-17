@@ -19,7 +19,7 @@ function ProjectImg({ id, img, source }) {
     >
       {!loaded && (
         <div
-          className="shimmer absolute inset-0 rounded bg-zinc-200 dark:bg-[#111138]"
+          className="shimmer absolute inset-0 rounded bg-slate-200 dark:bg-[#111138]"
           aria-hidden="true"
         ></div>
       )}

@@ -46,7 +46,7 @@ function Navbar() {
           {navLinks.map((link, i) => (
             <a
               key={i}
-              className="rounded px-2 py-1 text-black hover:bg-gray-400 dark:text-[#c9c0c0] dark:hover:bg-blue-950 dark:hover:text-zinc-50"
+              className="rounded px-2 py-1 text-slate-800 hover:bg-slate-200 dark:text-[#c9c0c0] dark:hover:bg-blue-950 dark:hover:text-zinc-50"
               href={link.href}
               target={
                 link.label === "Resume"
@@ -66,7 +66,7 @@ function Navbar() {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <IconButton onClick={toggleDrawer(true)} color="inherit">
-            <MenuIcon className="text-black dark:text-white" />
+            <MenuIcon className="text-slate-800 dark:text-white" />
           </IconButton>
         </div>
       </nav>
@@ -77,7 +77,7 @@ function Navbar() {
           <div className="mb-4 flex items-center justify-between">
             <img className="w-10" src={image} alt="Site Icon" />
             <IconButton onClick={toggleDrawer(false)}>
-              <CloseIcon className="text-black dark:text-white" />
+              <CloseIcon className="text-slate-800 dark:text-white" />
             </IconButton>
           </div>
           <List>
@@ -95,7 +95,7 @@ function Navbar() {
                   primary={link.label}
                   primaryTypographyProps={{
                     className:
-                      "text-black dark:text-[#c9c0c0] hover:text-blue-600",
+                      "text-slate-800 hover:text-blue-600 dark:text-[#c9c0c0]",
                   }}
                 />
               </ListItem>

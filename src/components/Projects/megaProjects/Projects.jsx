@@ -22,7 +22,7 @@ function Projects({
   return (
     <div
       ref={ref}
-      className={`md:techColor over relative ${source == "smallProjects" ? "mt-[170px] mb-15 min-h-[370px] border border-blue-200/70 bg-white/95 shadow-xl shadow-blue-950/40 sm:mb-0 sm:min-h-[320px] md:mt-0 md:mb-[250px] md:min-h-[440px] dark:border-blue-950/80 dark:bg-[#030012] dark:shadow-blue-950/70" : "border border-blue-200/70 bg-white/95 pb-6 shadow-xl shadow-blue-950/40 sm:mb-[230px] sm:min-h-[400px] sm:pb-10 md:mb-[250px] md:min-h-[440px] lg:mb-[280px] dark:border-blue-950/80 dark:bg-[#030012] dark:shadow-blue-950/70"} rounded px-4 pt-8 transition-all duration-700 ease-out select-auto sm:px-6 sm:py-10 md:px-10 md:shadow-lg lg:px-15 ${
+      className={`md:techColor over relative ${source == "smallProjects" ? "mt-[170px] mb-15 min-h-[370px] border border-slate-200 bg-white shadow-xl shadow-slate-900/5 sm:mb-0 sm:min-h-[320px] md:mt-0 md:mb-[250px] md:min-h-[440px] dark:border-blue-950/80 dark:bg-[#030012] dark:shadow-blue-950/70" : "border border-slate-200 bg-white pb-6 shadow-xl shadow-slate-900/5 sm:mb-[230px] sm:min-h-[400px] sm:pb-10 md:mb-[250px] md:min-h-[440px] lg:mb-[280px] dark:border-blue-950/80 dark:bg-[#030012] dark:shadow-blue-950/70"} rounded px-4 pt-8 transition-all duration-700 ease-out select-auto sm:px-6 sm:py-10 md:px-10 md:shadow-lg lg:px-15 ${
         delayPassed && inView
           ? "translate-y-0 opacity-100"
           : "translate-y-10 opacity-0"

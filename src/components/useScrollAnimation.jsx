@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from "react";
 
 function useScrollAnimation(threshold = 0.2, delayTime = 0) {
   const [delayPassed, setDelayPassed] = useState(false);
@@ -20,11 +20,11 @@ function useScrollAnimation(threshold = 0.2, delayTime = 0) {
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
           setInView(true);
-          setHasAnimated(true);   // ✅ mark animation as done
-          observer.disconnect();  // stop observing
+          setHasAnimated(true); // ✅ mark animation as done
+          observer.disconnect(); // stop observing
         }
       },
-      { threshold }
+      { threshold },
     );
 
     if (elementRef.current) {

@@ -7,7 +7,7 @@ function TechMarquee() {
   const { ref, inView, delayPassed } = useScrollAnimation(0.7, 2000);
   const { theme } = useTheme();
   let marqueColor;
-  if (theme == "dark" ? (marqueColor = "#00030E") : (marqueColor = "#D4D4D8"));
+  if (theme == "dark" ? (marqueColor = "#00030E") : (marqueColor = "#f1f3f8"));
 
   return (
     <div

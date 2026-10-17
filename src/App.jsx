@@ -11,7 +11,7 @@ import { ThemeProvider } from "./components/context/ThemeContext";
 function App() {
   return (
     <ThemeProvider>
-      <div className="bg-zinc-300 text-black dark:bg-[linear-gradient(135deg,#00030e_45%,#00031b_10%,#00030e_45%)] dark:text-[#f2f2f2]">
+      <div className="bg-[#f1f3f8] text-slate-900 dark:bg-[linear-gradient(135deg,#00030e_45%,#00031b_10%,#00030e_45%)] dark:text-[#f2f2f2]">
         <Navbar />
         <HeroSection />
         <About />

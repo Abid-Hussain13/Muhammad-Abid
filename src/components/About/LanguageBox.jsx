@@ -7,13 +7,13 @@ function LanguageBox({ imgUrl, language, learning, boxColor, delay = 0 }) {
   return (
     <div
       ref={ref}
-      className={`group relative min-h-[135px] space-y-2 rounded p-4 shadow-xs shadow-sky-950 transition-all duration-[2000ms] ease-out dark:bg-[#030012] dark:shadow-sm dark:shadow-blue-950 ${
+      className={`group relative min-h-[135px] space-y-2 rounded bg-white p-4 shadow-sm shadow-slate-900/5 transition-all duration-[2000ms] ease-out dark:bg-[#030012] dark:shadow-sm dark:shadow-blue-950 ${
         delayPassed && inView
           ? "translate-y-0 opacity-100"
           : "translate-y-10 opacity-0"
       }`}
     >
-      <div className="absolute -top-2 -right-2 z-10 h-6 w-6 shadow-2xl shadow-white sm:h-8 sm:w-8">
+      <div className="absolute -top-2 -right-2 z-10 h-6 w-6 shadow-lg shadow-slate-900/10 sm:h-8 sm:w-8 dark:shadow-white/30">
         <img
           src={imgUrl}
           alt={`${language} Logo`}

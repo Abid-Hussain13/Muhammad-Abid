@@ -45,7 +45,7 @@ function ContactForm() {
     >
       <div className="text-center">
         <input
-          className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-xs font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm"
+          className="font-momo w-full max-w-md rounded-lg border border-slate-300 bg-white px-4 py-2 text-xs font-medium text-slate-800 placeholder-slate-400 shadow-sm transition-all duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm dark:border-blue-900 dark:bg-white dark:text-gray-800 dark:placeholder-gray-400"
           type="text"
           name="name"
           id="name"
@@ -55,7 +55,7 @@ function ContactForm() {
 
       <div className="text-center">
         <input
-          className="font-momo w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-xs font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm"
+          className="font-momo w-full max-w-md rounded-lg border border-slate-300 bg-white px-4 py-2 text-xs font-medium text-slate-800 placeholder-slate-400 shadow-sm transition-all duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm dark:border-blue-900 dark:bg-white dark:text-gray-800 dark:placeholder-gray-400"
           type="text"
           name="email"
           id="email"
@@ -70,7 +70,7 @@ function ContactForm() {
 
       <div className="text-center">
         <textarea
-          className="font-momo h-32 w-full max-w-md rounded-lg border border-blue-900 bg-white px-4 py-2 text-xs font-medium text-gray-800 placeholder-gray-400 shadow-sm transition-all duration-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm"
+          className="font-momo h-32 w-full max-w-md rounded-lg border border-slate-300 bg-white px-4 py-2 text-xs font-medium text-slate-800 placeholder-slate-400 shadow-sm transition-all duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-sm dark:border-blue-900 dark:bg-white dark:text-gray-800 dark:placeholder-gray-400"
           name="message"
           id="message"
           placeholder="Your Message"

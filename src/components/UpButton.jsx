@@ -15,7 +15,7 @@ function UpButton() {
         />
       </div> */}
       <KeyboardDoubleArrowUpIcon />
-      <p className="w-40 text-center text-gray-600 capitalize hover:text-gray-500">
+      <p className="w-40 text-center text-slate-600 capitalize hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200">
         Scroll Back to up
       </p>
     </div>

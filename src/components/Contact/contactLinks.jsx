@@ -4,10 +4,10 @@ import socialLinks from "../../data/socialLinks";
 function contactLinks() {
   return (
     <div className="text-center md:col-span-2">
-      <h1 className="text-base font-semibold text-gray-500 sm:text-2xl">
+      <h1 className="text-base font-semibold text-slate-700 sm:text-2xl dark:text-slate-300">
         Get in Touch
       </h1>
-      <h1 className="sm:text-md flex justify-center gap-1 text-sm font-normal text-gray-500">
+      <h1 className="sm:text-md flex justify-center gap-1 text-sm font-normal text-slate-700 dark:text-slate-300">
         <span className="mt-0.5 sm:mt-0">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=abidhussainme1@gmail.com"

@@ -6,7 +6,7 @@ function ModeBtn() {
 
   return (
     <button
-      className="mx-2 rounded bg-gray-400 px-2 py-1 hover:bg-gray-500 md:mx-0 dark:bg-blue-950 dark:hover:bg-blue-900"
+      className="mx-2 rounded bg-slate-200 px-2 py-1 hover:bg-slate-300 md:mx-0 dark:bg-blue-950 dark:hover:bg-blue-900"
       onClick={toggleTheme}
     >
       {theme === "dark" ? (
