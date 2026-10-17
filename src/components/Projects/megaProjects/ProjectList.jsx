@@ -37,6 +37,7 @@ function ProjectList() {
           blobColor={smallProjects[projectId].color}
           source={"smallProjects"}
           handleProjectId={handleProjectId}
+          selectedProjectIndex={projectId}
         />
       </div>
     </section>

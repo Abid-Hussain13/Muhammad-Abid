@@ -3,10 +3,14 @@ import React from "react";
 function Blob({ id, blobColor, source }) {
   return (
     <div
-      className={`pointer-events-none absolute inset-0 z-0 overflow-hidden md:inline ${source == "smallProjects" && "hidden"}`}
+      className={`pointer-events-none absolute inset-0 z-0 md:inline ${source == "smallProjects" && "hidden"} ${id < 9 ? "" : "overflow-hidden"}`}
     >
       <div
-        className={`absolute -bottom-40 h-90 w-90 rounded-full blur-[200px] md:blur-[150px] ${id == "1" ? "left-1/2 -translate-x-4/4" : "left-1/2 -translate-x-2/3"}`}
+        className={`absolute h-90 w-90 rounded-full blur-[200px] md:blur-[150px] ${
+          id < 9
+            ? "bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
+            : `-bottom-40 ${id == "1" ? "left-1/2 -translate-x-4/4" : "left-1/2 -translate-x-2/3"}`
+        }`}
         style={{ background: blobColor }}
       ></div>
     </div>

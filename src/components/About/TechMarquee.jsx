@@ -20,6 +20,8 @@ function TechMarquee() {
             key={index}
             src={`/MarqueeIcons/icon${index + 1}.png`}
             alt={`icon${index + 1}`}
+            loading="lazy"
+            decoding="async"
             className={`mx-10 h-11 w-auto object-contain sm:mx-20 ${theme == "dark" ? "brightness-50 filter" : ""}`}
           />
         ))}
