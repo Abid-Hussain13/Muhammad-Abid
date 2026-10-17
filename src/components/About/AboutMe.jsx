@@ -13,16 +13,8 @@ function AboutMe() {
           : "translate-y-10 opacity-0"
       }`}
     >
-      <div className="flex items-start">
-        <div className="w-7 flex-shrink-0 md:w-9 lg:w-11">
-          <img
-            className="h-auto w-full rotate-12 transition-all duration-500 ease-out group-hover:rotate-45"
-            src="img/brain-in-space.png"
-            alt="brain in space image"
-          />
-        </div>
-
-        <p className="pt-5 text-center text-[12px] sm:text-[14px] lg:text-[15px] xl:text-[16px]">
+      <div>
+        <p className="text-center text-[12px] sm:text-[14px] lg:text-[15px] xl:text-[16px]">
           Hi, I'm Muhammad Abid — a curious Full Stack Web Developer from
           Dunyapur, Pakistan. I have hands-on experience building real-world
           projects and I'm always striving to learn, grow, and create better
