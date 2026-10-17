@@ -13,7 +13,7 @@ function ProjectList() {
 
   return (
     <section className="z-90 mt-[120px] overflow-hidden">
-      <div id="projects" className={`relative mx-auto w-11/12 space-y-15`}>
+      <div id="projects" className={`relative mx-auto w-11/12 space-y-25`}>
         <HeroSectionText trackingEnabled={false} position={"relative"}>
           Projects
         </HeroSectionText>
